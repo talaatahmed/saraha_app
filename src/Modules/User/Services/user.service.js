@@ -466,3 +466,5 @@ export const DeleteFileFromCloudinaryService = async (req, res, next) => {
     .status(200)
     .json({ message: "file deleted successfully", success: true, result });
 };
+
+export const UpdatePasswordService = async (req, res, next) => {};
