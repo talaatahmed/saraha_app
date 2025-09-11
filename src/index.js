@@ -5,6 +5,7 @@ import helmet from "helmet";
 
 import userController from "./Modules/User/user.controller.js";
 import messageController from "./Modules/Message/message.controller.js";
+import welcomeController from "./Modules/Welcome/welcome.controller.js";
 import dbConnection from "./DB/db.connection.js";
 import { limiter } from "./Middleware/limiter.middleware.js";
 import { corsOptions } from "./Middleware/cors.middleware.js";
@@ -29,7 +30,7 @@ app.use(cors(corsOptions));
 //Handle routes
 app.use("/users", userController);
 app.use("/messages", messageController);
-app.use("/");
+app.use("/", welcomeController);
 
 //database
 dbConnection();
