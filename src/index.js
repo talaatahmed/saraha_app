@@ -29,6 +29,7 @@ app.use(cors(corsOptions));
 //Handle routes
 app.use("/users", userController);
 app.use("/messages", messageController);
+app.use("/");
 
 //database
 dbConnection();
