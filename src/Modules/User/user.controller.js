@@ -7,7 +7,7 @@ import { vlidationMiddeware } from "../../Middleware/validation.middleware.js";
 import { SignUpSchema2 } from "../../Validators/Schemas/user.schema.js";
 import { hostUpload, localUpload } from "../../Middleware/multer.middleware.js";
 
-const router = new Router();
+const router = Router();
 
 //Authentication Routes
 router.post(

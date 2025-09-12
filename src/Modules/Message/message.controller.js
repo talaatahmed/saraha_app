@@ -1,6 +1,6 @@
 import { Router } from "express";
 import * as messageService from "./Services/message.service.js";
-const router = new Router();
+const router = Router();
 
 router.post("/send-message/:receiverId", messageService.sendMessageService);
 router.get("/all-messages", messageService.getAllMessage);
